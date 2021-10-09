@@ -33,12 +33,15 @@ function Box(props) {
 
 function App() {
   return (
-    <Canvas>
-      <ambientLight />
-      <pointLight position={[10, 10, 10]} />
-      <Box position={[-1.2, 0, 0]} />
-      <Box position={[1.2, 0, 0]} />
-    </Canvas>
+    <div style={{ position: "relative", width: '100vw', height: '100vh' }}>
+      <Canvas >
+        <ambientLight />
+        <pointLight position={[10, 10, 10]} />
+        <Box position={[-1.2, 0, 0]} />
+        <Box position={[1.2, 0, 0]} />
+      </Canvas>
+      <p className = "text-thing" >text thing</p>
+    </div>
   );
 }
 
